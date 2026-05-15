@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
-    "build": "cd backend && tsc",
-    "start": "node dist/server.js"
+    "build": "cd backend && npm install && npm run build",
+    "start": "node backend/dist/server.js"
   },
   "keywords": [],
   "author": "",
